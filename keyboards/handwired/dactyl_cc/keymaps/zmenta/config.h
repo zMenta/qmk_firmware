@@ -5,12 +5,11 @@
 
 // Split keyboard detection
 #define SPLIT_USB_DETECT
-#define SPLIT_USB_TIMEOUT 4000 // previously at 2000
+#define SPLIT_USB_TIMEOUT 2000
 #define EE_HANDS
 
-// Possible solution for the keyboard not being detected upon boot and needing to unplug and plug the keyboard again
-// First test if the new value (4000) of usb_timeout works.
-// #define SPLIT_WATCHDOG_ENABLE
+#define SPLIT_WATCHDOG_ENABLE
+#define SPLIT_WATCHDOG_TIMEOUT 3000
 
 // When the user holds a key after tapping it, the tapping function is repeated by default, rather than activating the hold function. This allows keeping the ability to auto-repeat the tapping function of a dual-role key. QUICK_TAP_TERM enables fine tuning of that ability. If set to 0, it will remove the auto-repeat ability and activate the hold function instead.
 #define QUICK_TAP_TERM 0
