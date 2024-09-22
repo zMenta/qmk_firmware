@@ -3,6 +3,18 @@
 
 #pragma once
 
+// Split keyboard detection
+#define SPLIT_USB_DETECT
+#define SPLIT_USB_TIMEOUT 4000 // previously at 2000
+#define EE_HANDS
+
+// When the user holds a key after tapping it, the tapping function is repeated by default, rather than activating the hold function. This allows keeping the ability to auto-repeat the tapping function of a dual-role key. QUICK_TAP_TERM enables fine tuning of that ability. If set to 0, it will remove the auto-repeat ability and activate the hold function instead.
+#define QUICK_TAP_TERM 0
+
+// This determines what is a tap and what is a hold
+// This setting is defined in milliseconds and defaults to 200ms
+#define TAPPING_TERM 140 // previously 160
+
 /* Mechanical locking support. Use KC_LCAP, KC_LNUM or KC_LSCR instead in keymap */
 #define LOCKING_SUPPORT_ENABLE
 
